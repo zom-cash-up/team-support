@@ -1,0 +1,122 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+h1{
+    font-size: 4rem;
+    color: #00d632;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-a{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    background-color:#00d632;
+    color: white;
+    font-size: 16px;
+}
+/* NAVBAR SECTION */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+}
+.navbar-left img{
+    width: 140px;
+}
+/* Landing Section Styles */
+.landing-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 3rem;
+    background-color: white;
+}
+
+.image-container img {
+    max-width: 400px;
+    height: auto;
+}
+.content-container{
+    width: 400px;
+}
+/* Card Section Styles */
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #00d632;
+    box-shadow: 0px 0px 8px #00d632;
+    background-color: #00d632;
+    border-radius: 8px;
+    /* background-color: #fff; */
+    color: white;
+    margin: 20px;
+    width: 250px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.card-section .card:nth-child(2){
+    transform: translateY(50px);
+}
+
+.card-section .card:nth-child(3){
+    transform: translateY(100px);
+}
+/* About Section Styles */
+.about-section {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.about-section p{
+    max-width: 600px;
+}
+.about-section a{
+    margin-top: 1rem;
+}
+.about-section-right img{
+    width: 200px;
+}
+
+
+@media screen and (max-width:950px) {
+    .landing-section img{
+        width: 270px;
+    }
+}
